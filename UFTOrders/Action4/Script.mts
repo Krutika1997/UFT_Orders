@@ -16,8 +16,8 @@ Const ForReading = 1, ForWriting = 2, ForAppending = 8
 Set oFile2 = FSO.OpenTextFile("E:\Sample.txt", ForReading, True)
 'AtEndOfStream - Returns true if the file pointer is at the end of a TextStream file; false if it is not
 Do Until oFile2.AtEndOfStream = True
-	print oFile2.ReadLine
-	ReportFilePath=oFile2.ReadLine
+    ReportFilePath=oFile2.ReadLine
+	print ReportFilePath
 Loop 
 oFile2.Close
 
