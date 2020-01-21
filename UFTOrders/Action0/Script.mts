@@ -1,2 +1,1 @@
-﻿RunAction "Multiple Order", oneIteration
-RunAction "Email", oneIteration
+﻿RunAction "Email", oneIteration

@@ -7,13 +7,13 @@ Set objOutlook = CreateObject("Outlook.Application")
 Set objOutlookMsg = objOutlook.CreateItem(olMailItem)
 
 ' Define mail recipients
-objOutlookMsg.To = "pavani@matryxsoft.com" 
+objOutlookMsg.To =DataTable("Email_To", dtGlobalSheet)
 
 'Read the Generated Result path
 Set FSO = CreateObject("Scripting.FileSystemObject")
 Const ForReading = 1, ForWriting = 2, ForAppending = 8
 'Now open file for reading
-Set oFile2 = FSO.OpenTextFile("E:\Sample.txt", ForReading, True)
+Set oFile2 = FSO.OpenTextFile(DataTable("FilePath", dtGlobalSheet), ForReading, True)
 'AtEndOfStream - Returns true if the file pointer is at the end of a TextStream file; false if it is not
 Do Until oFile2.AtEndOfStream = True
     ReportFilePath=oFile2.ReadLine
@@ -26,8 +26,8 @@ oFile2.Close
 'doc="E:\run_results.html"
 
 ' Body of the message
-objOutlookMsg.Subject = "UFT Report" 
-objOutlookMsg.Body = "PFA of the UFT Report"
+objOutlookMsg.Subject = DataTable("Email_Subject", dtGlobalSheet)
+objOutlookMsg.Body = DataTable("Email_Body", dtGlobalSheet)
 
 ' Add the attachment to the email
 objOutlookMsg.Attachments.Add(ReportFilePath)

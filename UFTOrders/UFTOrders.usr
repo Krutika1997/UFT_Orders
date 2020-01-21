@@ -12,7 +12,6 @@ DevelopTool=AQT
 
 [Actions]
 Action0=Action0\Script.mts
-Multiple Order=Action1\Script.mts
 Email=Action4\Script.mts
 
 [VuserProfiles]
@@ -54,9 +53,6 @@ Parameters.mtr=
 Action0\Script.mts=
 Action0\Resource.mtr=
 Action0\ObjectRepository.bdb=
-Action1\Script.mts=
-Action1\Resource.mtr=
-Action1\ObjectRepository.bdb=
 Action4\Script.mts=
 Action4\Resource.mtr=
 Action4\ObjectRepository.bdb=
