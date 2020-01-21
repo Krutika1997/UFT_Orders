@@ -26,7 +26,7 @@ Window("Orders").Dialog("New order").WinComboBox("Product :").Select DataTable("
  Window("Orders").Dialog("New order").WinCalendar("ExpirationDate").Type(d_ExpiryDate)
    
  Window("Orders").Dialog("New order").WinButton("btn_OK").Click
- 
+
  
  
  
