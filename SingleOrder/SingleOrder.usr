@@ -15,6 +15,7 @@ Action0=Action0\Script.mts
 OpenNewOrder=Action1\Script.mts
 Create_NewOrder=Action2\Script.mts
 SaveOrder=Action3\Script.mts
+WriteResultDirPath=Action4\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -64,3 +65,6 @@ Action2\ObjectRepository.bdb=
 Action3\Script.mts=
 Action3\Resource.mtr=
 Action3\ObjectRepository.bdb=
+Action4\Script.mts=
+Action4\Resource.mtr=
+Action4\ObjectRepository.bdb=
